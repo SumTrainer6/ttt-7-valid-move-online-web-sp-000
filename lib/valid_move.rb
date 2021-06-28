@@ -1,7 +1,11 @@
 # code your #valid_move? method here
 def valid_move?(board, position)
 # check if position is in range of board
-  if position == 
+  if position <= board.length-1 && position >= 0 
+    board[position] == "" || board[position] == " "
+  else
+    return false 
+  end 
 # check if position is not taken
 
 end 
